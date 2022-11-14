@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EA_Testing_1Model2StoreContainer" CdmEntityContainer="EA_Testing_1Entities6">
+    <EntitySetMapping Name="Sec___Class">
+      <EntityTypeMapping TypeName="EA_Testing_1Model2.Sec___Class">
+        <MappingFragment StoreEntitySet="Sec &amp; Class">
+          <ScalarProperty Name="Class_Id" ColumnName="Class Id" />
+          <ScalarProperty Name="Class___sec" ColumnName="Class &amp; sec" />
+          <ScalarProperty Name="Class_stregnth" ColumnName="Class stregnth" />
+          <ScalarProperty Name="Class_Teacher" ColumnName="Class Teacher" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

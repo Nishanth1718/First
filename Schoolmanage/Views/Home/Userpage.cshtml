@@ -1,0 +1,358 @@
+﻿
+@{
+    ViewBag.Title = "Userpage";
+}
+
+<h2>Userpage</h2>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designers</title>
+
+    <!-- +*++*+*+*+*+*+*+*+*+*+*+* styles +*++*+*+*+*+*+*+*+*+*+*+*  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="./css/icons.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="~/Content/CSS/image/Wallpaper 34 Moon forest Red and Black Wallpapers.jpg" />
+            </div>
+        </div>
+        <div class="header-right">
+            <navbar id="navbarToggle">
+                <ul>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <i class="fa-solid fa-house"></i>
+                            <span>home</span>
+                        </a>
+                        <section class="nav-link maintree">
+                            <div class="list-pack">
+                                <ul class="list-body">
+                                    <li>
+                                        <div class="list-header">
+                                            <i class="fa-solid fa-calendar-check"></i>
+                                            <span class="sub-menu">Leaves</span>
+                                        </div>
+                                        <section class="nav-link subtree" style="display: none;">
+                                            <div class="list-pack">
+                                                <ul class="list-body">
+                                                    <li>Create Leave Request</li>
+                                                    <li>Create OOD Request</li>
+                                                    <li>View Leave Request</li>
+                                                    <li>View OOD Request</li>
+                                                    <li>Approve Leave Request</li>
+                                                    <li>Approve OOD Request</li>
+                                                    <li>Leave Balance</li>
+                                                    <li>Leave History</li>
+                                                    <li>Leave Report</li>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                    </li>
+                                    <li>
+                                        <div class="list-header">
+                                            <i class="fa-solid fa-calendar-check"></i>
+                                            <span class="sub-menu">Time Table</span>
+                                        </div>
+                                        <section class="nav-link subtree" style="display: none;">
+                                            <div class="list-pack">
+                                                <ul class="list-body">
+                                                    <li>Daily Attendance</li>
+                                                    <li>Subordinates Attendance</li>
+                                                    <li>Daily Attendance (HR)</li>
+                                                    <li>Attendance Correction</li>
+                                                    <li>View Corrections</li>
+                                                    <li>Approve Attendance</li>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                    </li>
+                                    <li>
+                                        <div class="list-header">
+                                            <i class="fa-solid fa-calendar-check"></i>
+
+                                            <span>@Html.ActionLink("Class Details", "Index", "sec___Class", null, null)</span>
+                                        </div>
+                                       
+                                    </li>
+                                    <li>
+                                        <div class="list-header">
+                                            <i class="fa-solid fa-calendar-check"></i>
+                                            <span>@Html.ActionLink("Logout", "Logout", "Home", null, null)</span>
+                                        </div>
+                                       
+                                    </li>
+                                    <li>
+                                        <div class="list-header">
+                                            <i class="fa-solid fa-calendar-check"></i>
+                                            <span>@Html.ActionLink("Teacher Info", "Index","TeacherInfos", null, null)</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list-header">
+                                            <i class="fa-solid fa-calendar-check"></i>
+                                            <span>@Html.ActionLink("Create New", "Index", "Loginpages", null, null)</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item active">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>MY Info</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>performance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <i class="fa-solid fa-bars-progress"></i>
+                            <span>manage</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <i class="fa-solid fa-display"></i>
+                            <span>display</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <i class="fa-solid fa-unlock-keyhole"></i>
+                            <span>admin</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-item">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </navbar>
+        </div>
+        <div class="header-toggle">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </header>
+
+    <section class="section-1">
+        <div class="section-left">
+            <div class="card user-detail" id="userDetail">
+                <div class="profile">
+
+                    <img src="~/Content/CSS/image/dp.jpeg" />
+                </div>
+                <div class="user">
+                    Hi
+                    <span class="user-name">Sarika </span>
+                    <span class="user-code">[880] </span>
+                </div>
+                <div class="login-detail">
+                    <div class="login-left">
+                        last logon - <span class="last-log">Aug 13 2022 3:56 PM</span>
+                    </div>
+                    <div class="login-right">
+                        current login since - <span class="last-log">Aug 13 2022 3:56 PM</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card user-birth" id="userBirth">
+                <div class="profile">
+                    <img src="~/Content/CSS/image/birthdayImg.gif" />
+                     
+
+                </div>
+                <div class="image-chamber">
+
+                    <img src="~/Content/CSS/image/birthdayImg.gif" />
+                </div>
+                <span class="bless">Sarika </span>
+            </div>
+        </div>
+        <div class="section-middle">
+            <div class="card-grid">
+                <div class="card ">
+                    <div class="table approver">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">
+                                        <div class="title-medium">approver</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>gowtham thangamani</td>
+                                    <td>
+                                        <span class="accept">👍</span>
+                                        <span class="reject">👍</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Manikanda prabhu</td>
+                                    <td>
+                                        <span class="accept">👍</span>
+                                        <span class="reject">👍</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>karthiga</td>
+                                    <td>
+                                        <span class="accept">👍</span>
+                                        <span class="reject">👍</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>shoban rahul</td>
+                                    <td>
+                                        <span class="accept">👍</span>
+                                        <span class="reject">👍</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="table hod">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">
+                                        <div class="title-medium">HOD</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>gowtham thangamani</td>
+                                    <td>
+                                        <span class="accept">👍</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>shoban rahul</td>
+                                    <td>
+                                        <span class="reject">👍</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Maniganda prabhu</td>
+                                    <td>
+                                        <span class="accept">👍</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>karthiga</td>
+                                    <td>
+                                        <span class="reject">👍</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="table leave">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">
+                                        <div class="title-medium">leave</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="remain-leave">
+                                            <span class="applicant">gowtham thangamani</span>
+                                            <span class="badge">24</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="remain-leave">
+                                            <span class="applicant">manikanda prabhu</span>
+                                            <span class="badge">20</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="remain-leave">
+                                            <span class="applicant">shoban rahul</span>
+                                            <span class="badge">04</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="remain-leave">
+                                            <span class="applicant">shankar</span>
+                                            <span class="badge">00</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title-medium">latest circulars</div>
+                <ul class="link-list">
+                    <li>iso</li>
+                    <li>aceplay</li>
+                    <li>corporate video</li>
+                    <li>suggetion portal</li>
+                    <li>legal compliance</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section-right">
+            <div class="calender">
+                <input type="date" name="hrCalendar" id="hrCalendar">
+            </div>
+            <div class="card">
+                <div class="title-medium">quick links</div>
+                <ul class="link-list">
+                    <li>iso</li>
+                    <li>aceplay</li> 
+                    <li>corporate video</li>
+                    <li>suggetion portal</li>
+                    <li>legal compliance</li>
+                </ul>
+            </div>
+       
+      
+    </section>
+
+    <script src="./js/custom.js"></script>
+    <link href="~/Content/CSS/all.css" rel="stylesheet" />
+    <link href="~/Content/CSS/icons.css" rel="stylesheet" />
+    <link href="~/Content/CSS/media.css" rel="stylesheet" />
+    <link href="~/Content/CSS/style.css" rel="stylesheet" />
+
+</body>
+</html>
+

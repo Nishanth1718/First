@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EA_Testing_1Model2" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Sec___Class">
+    <Key>
+      <PropertyRef Name="Class_Id" />
+    </Key>
+    <Property Name="Class_Id" Type="Int32" Nullable="false" />
+    <Property Name="Class___sec" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Class_stregnth" Type="Int32" Nullable="false" />
+    <Property Name="Class_Teacher" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="EA_Testing_1Entities6" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Sec___Class" EntityType="Self.Sec___Class" />
+  </EntityContainer>
+</Schema>
